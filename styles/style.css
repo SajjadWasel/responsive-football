@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*------------------------------------
+ common syles or utilites start here
+ -------------------------------------*/
+.button {
+    background: #E02C6D;
+    padding: 10px 24px;
+    border: 0px;
+}
+
+.button a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+/*-----------------------------------
+ common syles or utilites end here
+ ------------------------------------*/
+
+
+/* -----------------------------------
+header styles start here
+--------------------------------------*/
+header {
+    background-color: #2D25A0;
+    padding-right: 120px;
+    padding-left: 156px;
+    padding-top: 42px;
+}
+
+nav {
+    margin: 0px 0 64px 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link-list {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 36px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.top-banner .banner-title{
+    margin-bottom: 27px;
+}
+
+.top-banner .banner-title h1{
+    font-size: 64px;
+    color: #FFFFFF;
+}
+
+.banner-image img {
+    width: 556.01px;
+    height: 438px;
+}
+/*-------------------------
+ header styles end here
+ -------------------------*/
+
+
+/*------------------------
+ main styles start here
+ -------------------------*/
+
+ /*------------------------
+ main styles end here 
+ -------------------------*/
