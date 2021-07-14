@@ -132,8 +132,13 @@ nav ul li a {
  }
 
  /*----------------------------------
- .players-section styles end here 
+ players-section styles end here 
  ------------------------------------*/
+
+ /*----------------------------------
+ heightlights styles start here 
+ ------------------------------------*/
+
  .heighlights {
     display: flex;
     justify-content:center;
@@ -160,3 +165,153 @@ nav ul li a {
     font-size: 16px;
     color: #6C6C6C;
 }
+ /*----------------------------------
+ heighlights styles end here 
+ ------------------------------------*/
+
+
+  /*----------------------------------
+ footer styles start here 
+ ------------------------------------*/
+
+ footer {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ footer img {
+    width: 483.87px;
+    height: 110px;
+ }
+
+ footer i {
+    padding: 10px;
+    border-radius: 50%;
+    color: #969BAB;
+    background-color: #E7E7E8;    
+    margin: 0px 14px;
+ }
+
+ footer p{
+    margin-top: 20px;
+ }
+
+  /*----------------------------------
+ footer styles end here 
+ ------------------------------------*/
+
+  /*----------------------------------
+ responsive for mobile styles start here 
+ ------------------------------------*/
+
+
+@media only screen and (max-width:688px) {
+    nav {
+        display: none;
+    }
+
+    /* display problem end here */
+
+    header {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 70px;
+    }
+
+        
+    .top-banner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .top-banner .banner-title{
+        margin-bottom: 30px;
+        padding: 10%;
+    }
+
+    .top-banner .banner-title h1{
+        font-size: 36px;
+        color: #FFFFFF;
+        width: 278px;
+        height: 138px;
+        left: 16px;
+        top: 112px;
+    }
+
+    .banner-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .players-section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    
+     .players {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+     }
+
+     .heighlights {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        margin: 0 0 43px 0;
+        padding: 0;        
+    }
+    
+    .heighlights-image img {
+        width: 328px;
+        height: 248px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .heighlights-detail {
+        padding: 10px;
+        margin: 0 0 10px 0;
+    }
+    
+    .heighlights-detail h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+   
+    footer img {
+        width: 300px;
+        height: 100px;
+    }
+   
+    footer i {
+       padding: 10px;
+       border-radius: 50%;
+       color: #969BAB;
+       background-color: #E7E7E8;    
+       margin: 0px 14px;
+    }
+   
+    footer p{
+       margin-top: 20px;
+    }
+   
+
+}
+
+
+
+   /*----------------------------------
+      responsive for mobile styles end here 
+    ------------------------------------*/
