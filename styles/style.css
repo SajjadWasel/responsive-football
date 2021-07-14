@@ -87,13 +87,14 @@ nav ul li a {
 
 
 /*------------------------------------
- player-section styles start here
+ players-section styles start here
  -------------------------------------*/
  .players-section {
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
+    margin-bottom: 165px;
 }
 
  .players {
@@ -133,4 +134,29 @@ nav ul li a {
  /*----------------------------------
  .players-section styles end here 
  ------------------------------------*/
+ .heighlights {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 165px;
+}
 
+.heighlights-image img {
+    width: 567px;
+    height: 427px;
+    margin-right: 120px;
+    margin-left: 50px;
+}
+
+.heighlights-detail {
+    margin-left: 150px;
+}
+
+.heighlights-detail h2 {
+    font-size: 48px;
+}
+
+.heighlights-detail p{
+    font-size: 16px;
+    color: #6C6C6C;
+}
