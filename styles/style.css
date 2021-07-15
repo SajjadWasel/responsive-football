@@ -13,6 +13,24 @@ body {
     background: #E02C6D;
     padding: 10px 24px;
     border: 0px;
+    transition: box-shadow 0.2s;
+}
+
+.button:hover {
+    animation: shake-btn 0.2s ease infinite;
+    box-shadow: 5px 5px 30px #a31a31c9;
+}
+
+@keyframes shake-btn {
+    0%{
+        transform: translateX(-3px);
+    }
+    50%{
+        transform: translateX(3px);
+    }
+    100%{
+        transform: translateX(-3px);
+    }
 }
 
 .button a {
@@ -20,6 +38,7 @@ body {
     font-size: 16px;
     text-decoration: none;
 }
+
 /*-----------------------------------
  common syles or utilites end here
  ------------------------------------*/
@@ -82,7 +101,21 @@ nav ul li a {
     width: 556.01px;
     height: 438px;
     margin-left: 51;
+    animation: zoom 2s linear infinite;
 }
+
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.09);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 /*-------------------------
  header styles end here
  -------------------------*/
@@ -167,9 +200,130 @@ nav ul li a {
     font-size: 16px;
     color: #6C6C6C;
 }
+
  /*----------------------------------
  heighlights styles end here 
  ------------------------------------*/
+
+
+/*-----------------------------------
+ news styles start here 
+ ------------------------------------*/
+.news-section h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.news-section h1 span{
+    color: #E02C6D;
+}
+
+.newses {
+    display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap: 10px;
+     grid-row-gap: 10px;
+     margin: 10%;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10%;
+    border-radius: 5px;
+}
+
+.news img {
+    height: 200px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #FFFFFF;  
+    box-shadow: 10px 10px 40px gray;
+  
+}
+.news-details {
+    position: absolute;
+    height: 190px;
+    width: 240px;
+    visibility: hidden;
+}
+
+
+.news:hover .news-details {
+
+    padding: 20px;
+    visibility: visible;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+}
+
+
+/*-----------------------------------
+ news styles end here 
+ ------------------------------------*/
+
+
+/*-----------------------------------
+ contact styles start here 
+ ------------------------------------*/
+.contact {
+    margin-bottom: 10%;
+}
+
+.contact h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.contact h1 span{
+    color: #E02C6D;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form img {
+    height: 500px;
+    width: 500px;
+    margin-right: 30px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input input {
+    width: 500px;
+    height: 50px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 30px gray;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.form-input textarea {
+    width: 500px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px gray;
+}
+
+.form-input button {
+    margin-top: 25px;
+}
+
+
+/*-----------------------------------
+ contact styles end here 
+ ------------------------------------*/
+
 
 
   /*----------------------------------
@@ -209,11 +363,12 @@ nav ul li a {
 
 
 @media only screen and (max-width:688px) {
+
     nav {
         display: none;
     }
 
-    /* display problem end here */
+    /* responsiveness start here */
 
     header {
         width: 100%;
@@ -289,6 +444,58 @@ nav ul li a {
     
     .heighlights-detail h2 {
         font-size: 30px;
+    }
+
+    .news-section h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .newses {
+        display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         grid-column-gap: 0px;
+         grid-row-gap: 0px;
+         margin: 10%;
+    }
+
+    .contact h1{
+        font-size: 30px;
+    }
+    
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    form img {
+        height: 300px;
+        width: 300px;
+        margin-right: 30px;
+    }
+    
+    .form-input {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form-input input {
+        width: 300px;
+        height: 30px;
+        margin-bottom: 30px;
+        box-shadow: 10px 10px 30px gray;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+    
+    .form-input textarea {
+        width: 300px;
+        height: 70px;
+        border: 1px solid white;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px gray;
     }
 
     footer {
