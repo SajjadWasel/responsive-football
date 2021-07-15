@@ -75,11 +75,13 @@ nav ul li a {
 .top-banner .banner-title h1{
     font-size: 64px;
     color: #FFFFFF;
+    margin-left: 51;
 }
 
 .banner-image img {
     width: 556.01px;
     height: 438px;
+    margin-left: 51;
 }
 /*-------------------------
  header styles end here
@@ -216,7 +218,8 @@ nav ul li a {
     header {
         width: 100%;
         padding: 0;
-        margin-bottom: 70px;
+        height: 695px;
+        margin-bottom: 47px;
     }
 
         
@@ -241,8 +244,8 @@ nav ul li a {
     }
 
     .banner-image img {
-        width: 250px;
-        height: 250px;
+        width: 329px;
+        height: 259.17px;
     }
 
     .players-section {
@@ -260,24 +263,28 @@ nav ul li a {
         flex-direction: column;
      }
 
+     .players {
+         margin-bottom: 24px;
+     }
+
      .heighlights {
         display: flex;
         flex-wrap: wrap;
         justify-content:center;
-        margin: 0 0 43px 0;
-        padding: 0;        
+        margin: 60px 0 43px 0;
+        padding: 0;
     }
     
     .heighlights-image img {
         width: 328px;
         height: 248px;
-        margin: 0;
+        margin: 0 0 43px 0;
         padding: 0;
     }
     
     .heighlights-detail {
         padding: 10px;
-        margin: 0 0 10px 0;
+        margin: 0 0 29px 0;
     }
     
     .heighlights-detail h2 {
@@ -291,8 +298,8 @@ nav ul li a {
     }
    
     footer img {
-        width: 300px;
-        height: 100px;
+        width: 150px;
+        height: 63px;
     }
    
     footer i {
@@ -305,13 +312,13 @@ nav ul li a {
    
     footer p{
        margin-top: 20px;
+       margin-bottom: 187px;
     }
    
-
 }
 
 
 
-   /*----------------------------------
+   /*---------------------------------------
       responsive for mobile styles end here 
-    ------------------------------------*/
+    ----------------------------------------*/
